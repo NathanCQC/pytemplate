@@ -1,0 +1,1 @@
+The contents of the file qtmlib/tests/__init__.py should be empty.

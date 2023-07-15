@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "qtmlib"
+version = "0.0.1"
+description = "A library using pytket to write quantum algorithms in Python"
+
+[tool.setuptools.packages.find]
+where = "qtmlib"
+
+[tool.ruff]
+# Enable flake8-bugbear (`B`) rules, pandas, see https://beta.ruff.rs/docs/rules/
+select = ["E", "F", "B", "RUF","PT","B","UP", "C4", "D"]
+target-version = "py311"
+
+#https://microsoft.github.io/pyright/#/getting-started
+[tool.pyright]
+include = ["qtmlib","tests"]
+pythonVersion = "3.11"
+typeCheckingMode = "strict"
