@@ -1,13 +1,13 @@
 FROM python:3.11-slim-buster
 
-WORKDIR /app
+# Set the working directory to /qtmlib
+WORKDIR /qtmlib
 
-COPY pyproject.toml poetry.lock /app/
+# Copy the pyproject.toml and requirements.txt files to the container
+COPY . .
 
-RUN pip install poetry && \
-    poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+# Install the dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /app
-
+# Start the web server
 CMD ["python", "-m", "qtmlib.main"]

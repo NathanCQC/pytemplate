@@ -1,2 +1,1 @@
-def hello_world():
-    print("Hello, world!")
+"""Init file for qtmlib."""

@@ -7,12 +7,16 @@ version = "0.0.1"
 description = "A library using pytket to write quantum algorithms in Python"
 
 [tool.setuptools.packages.find]
-where = "qtmlib"
+where = ["qtmlib"]
 
 [tool.ruff]
 # Enable flake8-bugbear (`B`) rules, pandas, see https://beta.ruff.rs/docs/rules/
 select = ["E", "F", "B", "RUF","PT","B","UP", "C4", "D"]
 target-version = "py311"
+
+[tool.ruff.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
 
 #https://microsoft.github.io/pyright/#/getting-started
 [tool.pyright]

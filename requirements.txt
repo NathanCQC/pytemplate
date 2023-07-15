@@ -5,3 +5,5 @@ pytket
 pytket-qiskit
 pre-commit
 wheel
+pytest
+pytest-lazy-fixture
