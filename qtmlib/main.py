@@ -5,3 +5,6 @@ def hello_world():
     """Print 'Hello, world!' to the console."""
     hw = "Hello, World!"
     return hw
+
+
+print(hello_world())
