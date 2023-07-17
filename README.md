@@ -35,7 +35,7 @@ pytemplate
 └── requirements.txt
 ```
 
-The source code is located in the `qtmlib` folder, which contains the `__init__.py`, `main.py`, and `utils.py` files. The tests are located in the `tests` folder, which contains the `test_main.py` and `test_utils.py` files.
+The source code is located in the `pytemplate` folder, which contains the `__init__.py`, `main.py`, and `utils.py` files. The tests are located in the `tests` folder, which contains the `test_main.py` and `test_utils.py` files.
 
 The project uses toml for configuration instead of setup.py. The configuration file is located in `pyproject.toml`.
 
