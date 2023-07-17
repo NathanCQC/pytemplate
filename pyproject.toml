@@ -2,16 +2,19 @@
 requires = ["setuptools", "wheel"]
 
 [project]
-name = "qtmlib"
+name = "pytemplate"
 version = "0.0.1"
-description = "A library using pytket to write quantum algorithms in Python"
+description = "A python library"
+requires-python = ">=3.11"
+authors = [{name = "Author", email = "author@email.com" }]
 
 [tool.setuptools.packages.find]
-where = ["qtmlib"]
+where = ["pytemplate"]
 
 [tool.ruff]
 # Enable flake8-bugbear (`B`) rules, pandas, see https://beta.ruff.rs/docs/rules/
 select = ["E", "F", "B", "RUF","PT","B","UP", "C4", "D"]
+extend-exclude = ["**/*.ipynb"]
 target-version = "py311"
 
 [tool.ruff.pydocstyle]
@@ -20,6 +23,7 @@ convention = "google"
 
 #https://microsoft.github.io/pyright/#/getting-started
 [tool.pyright]
-include = ["qtmlib","tests"]
+include = ["pytemplate","tests"]
+ignore = ["**/*.ipynb"]
 pythonVersion = "3.11"
 typeCheckingMode = "strict"

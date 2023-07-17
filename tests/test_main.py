@@ -1,6 +1,6 @@
 """Tests for qtmlib.main module."""
 
-from qtmlib.main import hello_world
+from pytemplate.main import hello_world
 
 
 def test_hello_world():

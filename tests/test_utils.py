@@ -1,6 +1,6 @@
 """Tests for qtmlib.utils."""
 
-from qtmlib.utils import add_numbers
+from pytemplate.utils import add_numbers
 
 
 def test_add():

@@ -10,4 +10,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Start the web server
-CMD ["python", "-m", "qtmlib.main"]
+CMD ["python", "-m", "pytemplate.main"]
