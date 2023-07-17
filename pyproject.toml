@@ -13,7 +13,7 @@ where = ["pytemplate"]
 
 [tool.ruff]
 # Enable flake8-bugbear (`B`) rules, pandas, see https://beta.ruff.rs/docs/rules/
-select = ["E", "F", "B", "RUF","PT","B","UP", "C4", "D"]
+select = ["E", "F", "B", "RUF", "PT", "UP", "C4", "D"]
 extend-exclude = ["**/*.ipynb"]
 target-version = "py311"
 
