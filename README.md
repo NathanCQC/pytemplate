@@ -1,4 +1,4 @@
-# qtmlib
+# pytemplate
 
 This is a Python 3.11 app called pytemplate. It uses toml instead of setup.py for configuration. The project includes Docker, Pyright, Ruff, GitHub Actions, Black and pre-commit, and Sphinx.
 
