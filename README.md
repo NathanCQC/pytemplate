@@ -7,7 +7,7 @@ This is a Python 3.11 app called pytemplate. It uses toml instead of setup.py fo
 The project structure is as follows:
 
 ```
-qtmlib
+pytemplate
 ├── .github
 │   └── workflows
 │       └── python-app.yml
