@@ -1,12 +1,12 @@
 # pytemplate
 
-This is a Python 3.11 app called pytemplate. It uses toml instead of setup.py for configuration. The project includes Docker, Pyright, Ruff, GitHub Actions, Black and pre-commit, and Sphinx.
+This is a Python 3.11 app called pytemplate. It uses toml instead of setup.py for configuration. The project includes Docker, Pyright, Ruff, GitHub Actions, Black, pre-commit, and Sphinx.
 
 ## Project Structure
 
 The project structure is as follows:
 
-```
+```sh
 pytemplate
 ├── .github
 │   └── workflows
@@ -49,4 +49,22 @@ The project includes GitHub Actions for continuous integration, with the configu
 
 ## Installation
 
-To install the project, clone the repository and run `pip install -r requirements.txt`.
+To install the project, clone the repository and run:
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip setuptools
+pip install -r requirements.txt
+pre-commit install
+```
+
+Then install the project using:
+
+```sh
+pip install -e .
+```
+
+## Testing
+
+Just issue `pytest` from the root directory.

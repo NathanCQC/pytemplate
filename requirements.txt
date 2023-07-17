@@ -1,9 +1,7 @@
-pyright
 black
-sphinx
-pytket
-pytket-qiskit
 pre-commit
-wheel
+pyright
 pytest
 pytest-lazy-fixture
+sphinx
+wheel
