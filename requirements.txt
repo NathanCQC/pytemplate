@@ -1,7 +1,7 @@
 black
+build
 pre-commit
 pyright
 pytest
-pytest-lazy-fixture
 sphinx
 wheel
