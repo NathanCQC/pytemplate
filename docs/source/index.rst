@@ -1,9 +1,15 @@
 qtmlib
 ======
 
+Demo Sphinx site for the `CQCL pytemplate <https://github.com/CQCL/pytemplate>`_ project.
+
+----
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   modules
 
 Installation
 ------------
@@ -41,4 +47,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
+* :ref:`modindex`
 * :ref:`search`

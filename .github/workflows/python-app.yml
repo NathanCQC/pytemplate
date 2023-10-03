@@ -31,7 +31,7 @@ jobs:
         python -m pytest
     - name: Sphinx documentation build
       run: |
-        sphinx-build -M html docs/source/ docs/build/
+        make docs
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
