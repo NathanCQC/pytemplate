@@ -8,7 +8,7 @@ version = "0.0.1"
 description = "A python library"
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{name = "Author", email = "author@quantinuum.com" }]
+authors = [{name = "Author", email = "author@email.com" }]
 
 [tool.setuptools.packages.find]
 where = ["."]

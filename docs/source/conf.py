@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "qtmlib"
-project_copyright = "2023, Quantinuum"
-author = "Quantinuum"
+project_copyright = "2023, Author"
+author = "Author"
 release = "0.0.1"
 
 # -- General configuration ---------------------------------------------------

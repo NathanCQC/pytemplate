@@ -46,6 +46,10 @@ The project includes Sphinx for documentation, with the documentation located in
 
 The project includes GitHub Actions for continuous integration, with the configuration located in the `.github/workflows/python-app.yml` file.
 
+## Usage Notes
+
+Change references to "pytemplate" and "qtmlib" for your own project.
+
 ## Installation
 
 To install the project, clone the repository and run:
