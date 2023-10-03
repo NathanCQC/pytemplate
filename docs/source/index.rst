@@ -5,10 +5,6 @@ qtmlib
    :maxdepth: 2
    :caption: Contents:
 
-   installation
-   usage
-   utils
-
 Installation
 ------------
 
@@ -39,3 +35,11 @@ The utils module contains various utility functions that can be used in conjunct
    from qtmlib import utils
 
    utils.do_something()
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
