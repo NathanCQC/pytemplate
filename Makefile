@@ -17,7 +17,7 @@ docs:
 	sphinx-build -M html docs/source/ docs/build/
 
 clean:
-	rm -rf *.egg-info dist build
+	rm -rf *.egg-info dist build docs/build
 
 build: clean
 	python -m build --sdist -n

@@ -48,7 +48,7 @@ The project includes GitHub Actions for continuous integration, with the configu
 
 ## Usage Notes
 
-Change references to "pytemplate" and "qtmlib" for your own project.
+[Replace](https://github.com/your-tools/ruplacer) all mentions of "pytemplate" to your own project's name.
 
 ## Installation
 

@@ -1,4 +1,4 @@
-"""This is the main module of the qtmlib package."""
+"""This is the main module of the pytemplate package."""
 
 
 def hello_world():

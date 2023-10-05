@@ -1,4 +1,4 @@
-"""Tests for qtmlib.utils."""
+"""Tests for pytemplate.utils."""
 
 from pytemplate.utils import add_numbers
 

@@ -1,4 +1,4 @@
-"""Tests for qtmlib.main module."""
+"""Tests for pytemplate.main module."""
 
 from pytemplate.main import hello_world
 
