@@ -1,7 +1,7 @@
-black
-build
-pre-commit
-pyright
-pytest
-sphinx
-wheel
+black==23.11.0
+build==1.0.3
+pre-commit==3.5.0
+pyright==1.1.335
+pytest==7.4.3
+sphinx==7.2.6
+wheel==0.41.3
