@@ -13,23 +13,23 @@ repos:
       - id: debug-statements
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.16.20
+    rev: v1.16.23
     hooks:
       - id: typos
         args: []
 
   - repo: https://github.com/psf/black
-    rev: 23.10.0
+    rev: 23.11.0
     hooks:
       - id: black
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.0
+    rev: v0.1.5
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
 
   - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.332
+    rev: v1.1.335
     hooks:
       - id: pyright
