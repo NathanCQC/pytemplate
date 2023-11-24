@@ -30,6 +30,6 @@ repos:
         args: [--fix, --exit-non-zero-on-fix]
 
   - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.336
+    rev: v1.1.337
     hooks:
       - id: pyright
