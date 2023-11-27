@@ -4,4 +4,4 @@ pre-commit==3.5.0
 pyright==1.1.336
 pytest==7.4.3
 sphinx==7.2.6
-wheel==0.41.3
+wheel==0.42.0
