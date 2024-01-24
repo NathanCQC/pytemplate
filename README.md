@@ -10,6 +10,7 @@ The project structure is as follows:
 pytemplate
 ├── .dockerignore
 ├── .github
+│   ├── dependabot.yml
 │   └── workflows
 │       └── python-app.yml
 ├── .gitignore
