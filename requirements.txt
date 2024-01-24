@@ -1,7 +1,7 @@
 black==23.12.1
 build==1.0.3
 pre-commit==3.6.0
-pyright==1.1.340
+pyright==1.1.348
 pytest==7.4.4
 sphinx==7.2.6
 wheel==0.42.0

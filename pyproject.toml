@@ -27,3 +27,6 @@ typeCheckingMode = "strict"
 pythonpath = [
   "."
 ]
+
+[tool.refurb]
+python_version = "3.11"
