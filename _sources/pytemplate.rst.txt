@@ -1,0 +1,29 @@
+pytemplate package
+==================
+
+Submodules
+----------
+
+pytemplate.main module
+----------------------
+
+.. automodule:: pytemplate.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pytemplate.utils module
+-----------------------
+
+.. automodule:: pytemplate.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pytemplate
+   :members:
+   :undoc-members:
+   :show-inheritance:
