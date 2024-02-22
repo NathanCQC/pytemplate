@@ -1,8 +1,9 @@
 name: Python application
 
 on:
-  push:
-    branches: [ main ]
+  # Uncomment to enable triggering jobs on each push to main
+  # push:
+  #   branches: [ main ]
   pull_request:
     branches: [ main ]
   merge_group:
@@ -38,6 +39,7 @@ jobs:
     - name: Sphinx documentation build
       run: |
         make docs
+    # This deployment will only trigger if push to main trigger is uncommented above
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
