@@ -2,6 +2,10 @@
 
 This is a Python 3.11 app called pytemplate. The project includes Docker, Pyright, Ruff, GitHub Actions, Black, pre-commit, and Sphinx.
 
+<details>
+
+<summary>Project Structure</summary>
+
 ## Project Structure
 
 The project structure is as follows:
@@ -10,24 +14,24 @@ The project structure is as follows:
 pytemplate
 ├── .dockerignore
 ├── .github
-│   ├── dependabot.yml
-│   └── workflows
-│       └── python-app.yml
+│   ├── dependabot.yml
+│   └── workflows
+│       └── python-app.yml
 ├── .gitignore
 ├── .pre-commit-config.yaml
 ├── Dockerfile
 ├── Makefile
 ├── README.md
 ├── docs
-│   ├── Makefile
-│   └── source
-│       ├── conf.py
-│       └── index.rst
+│   ├── Makefile
+│   └── source
+│       ├── conf.py
+│       └── index.rst
 ├── pyproject.toml
 ├── pytemplate
-│   ├── __init__.py
-│   ├── main.py
-│   └── utils.py
+│   ├── __init__.py
+│   ├── main.py
+│   └── utils.py
 ├── requirements.txt
 ├── ruff.toml
 └── tests
@@ -47,9 +51,12 @@ The project includes Sphinx for documentation, with the documentation located in
 
 The project includes GitHub Actions for continuous integration, with the configuration located in the `.github/workflows/python-app.yml` file.
 
+</details>
+
 ## Usage Notes
 
-[Replace](https://github.com/your-tools/ruplacer) all mentions of "pytemplate" to your own project's name.
+- [Replace](https://github.com/your-tools/ruplacer) all mentions of "pytemplate" to your own project's name.
+- Edit `.github/workflows/python-app.yml` to configure which triggers and jobs to enable/disable.
 
 ## Installation
 
