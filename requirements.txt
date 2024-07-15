@@ -3,5 +3,5 @@ build==1.2.1
 pre-commit==3.7.1
 pyright==1.1.364
 pytest==8.2.2
-sphinx==7.3.7
+sphinx==7.4.3
 wheel==0.43.0
