@@ -1,6 +1,6 @@
 # pytemplate
 
-This is a Python 3.11 app called pytemplate. The project includes Docker, Pyright, Ruff, GitHub Actions, Black, pre-commit, and Sphinx.
+This is a Python 3.12 app called pytemplate. The project includes Docker, pyright, ruff, typos, GitHub Actions, pre-commit, and Sphinx.
 
 <details>
 
@@ -45,7 +45,7 @@ The project uses toml for configuration instead of `setup.py`. The configuration
 
 The project includes Docker, with a `Dockerfile` located in the root directory. The `.dockerignore` file is also located in the root directory.
 
-The project includes Pyright for static type checking, pre-commit for code formatting, Black for code formatting and Ruff for linting. The configuration for these tools is located in the `.pre-commit-config.yaml` and `ruff.toml` files.
+The project includes `pyright` for static type checking, `typos` for code spell check, `ruff` for linting & code formatting, and `pre-commit` for enforcing these checks before git commits and on the CI. The configuration for these tools is located in the `ruff.toml` and `.pre-commit-config.yaml` files.
 
 The project includes Sphinx for documentation, with the documentation located in the `docs` folder. The `source/conf.py` file contains the configuration for Sphinx.
 
