@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -13,13 +13,13 @@ repos:
       - id: debug-statements
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.24.5
+    rev: v1.26.0
     hooks:
       - id: typos
         args: []
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.4
+    rev: v0.6.9
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -31,6 +31,6 @@ repos:
       - id: refurb
 
   - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.379
+    rev: v1.1.385
     hooks:
       - id: pyright

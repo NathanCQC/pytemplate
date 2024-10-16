@@ -1,6 +1,6 @@
 # pytemplate
 
-This is a Python 3.12 app called pytemplate. The project includes Docker, pyright, ruff, typos, GitHub Actions, pre-commit, and Sphinx.
+This is a Python 3.13 app called pytemplate. The project includes Docker, pyright, ruff, typos, GitHub Actions, pre-commit, and Sphinx.
 
 <details>
 
