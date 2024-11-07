@@ -7,7 +7,7 @@ name = "pytemplate"
 version = "0.0.1"
 description = "A python library"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 authors = [{name = "Author", email = "author@email.com" }]
 
 [tool.setuptools.packages.find]
@@ -20,7 +20,7 @@ Repository = "https://github.com/CQCL/pytemplate.git"
 [tool.pyright]
 include = ["pytemplate","tests"]
 ignore = ["**/*.ipynb"]
-pythonVersion = "3.12"
+pythonVersion = "3.13"
 typeCheckingMode = "strict"
 
 [tool.pytest.ini_options]
@@ -29,4 +29,4 @@ pythonpath = [
 ]
 
 [tool.refurb]
-python_version = "3.12"
+python_version = "3.13"
