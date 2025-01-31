@@ -2,6 +2,8 @@
 
 This is a Python 3.13 app called pytemplate. The project includes Docker, pyright, ruff, typos, GitHub Actions, pre-commit, and Sphinx.
 
+The extremely fast Python package and project manager, [uv](https://docs.astral.sh/uv/#getting-started), is required.
+
 <details>
 
 <summary>Project Structure</summary>
@@ -32,7 +34,6 @@ pytemplate
 │   ├── __init__.py
 │   ├── main.py
 │   └── utils.py
-├── requirements.txt
 ├── ruff.toml
 └── tests
     ├── test_main.py
@@ -63,21 +64,12 @@ The project includes GitHub Actions for continuous integration, with the configu
 To install the project, clone the repository and run:
 
 ```sh
-python -m venv .venv
-source .venv/bin/activate
-pip install -U pip setuptools
-pip install -r requirements.txt
-pre-commit install
-```
-
-Then install the project using:
-
-```sh
-pip install -e .
+uv sync
+uv run pre-commit install
 ```
 
 See `Makefile` for other useful commands.
 
 ## Testing
 
-Just issue `pytest` from the root directory.
+Issue `make tests` or `uv run pytest` from the root directory.
