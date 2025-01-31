@@ -5,49 +5,45 @@ on:
   # push:
   #   branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   merge_group:
-      types: [checks_requested]
+    types: [checks_requested]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.13"]
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: ${{ matrix.python-version }}
-        cache: 'pip'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip setuptools
-        python -m pip install -r requirements.txt
-        python -m pip install -e .
-    - name: Pre-commit checks
-      run: |
-        python -m pip install pre-commit
-        pre-commit run --all-files
-    - name: Run tests
-      run: |
-        python -m pytest
-    - name: Sphinx documentation build
-      run: |
-        make docs
-    # This deployment will only trigger if push to main trigger is uncommented above
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-      with:
-        publish_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/build/html/
-        force_orphan: true
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+      - name: Install dependencies
+        run: |
+          uv sync --all-extras --dev
+      - name: Pre-commit checks
+        run: |
+          uv run pre-commit run --all-files
+      - name: Run tests
+        run: |
+          uv run pytest
+      - name: Sphinx documentation build
+        run: |
+          make docs
+      # This deployment will only trigger if push to main trigger is uncommented above
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html/
+          force_orphan: true
 
     # TODO in the future
     # - name: Build and push Docker image
